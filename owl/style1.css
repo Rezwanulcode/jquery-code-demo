@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans&display=swap");
+/* font-family: 'Arvo', serif;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Open Sans", sans-serif;
+   font-size: 18px;
+   line-height: 28px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   font-weight: 400;
+   background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(blue),
+      to(rgba(206, 176, 181, 0.514))
+   );
+   background: -o-linear-gradient(blue, rgba(206, 176, 181, 0.514));
+   background: linear-gradient(blue, rgba(206, 176, 181, 0.514));
+}
+
+h2,
+h3 {
+   font-family: "Arvo", serif;
+   font-weight: 700px;
+}
+a {
+   text-decoration: none;
+}
+#testimonial {
+   background: -o-linear-gradient(20deg, blue, rgba(192, 30, 57, 0.514));
+   background: linear-gradient(70deg, blue, rgba(192, 30, 57, 0.514));
+   text-align: center;
+   margin-top: 10%;
+}
+.container {
+   max-width: 1140px;
+   /* margin:10% 0 20% 0; */
+   margin: auto;
+}
+.section-padding {
+   padding: 60px 0;
+}
+.img_sec img {
+   width: inherit !important ;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0 auto;
+   /* align-items: center; */
+   padding: 5px;
+}
+.img_sec {
+   margin: 15px;
+   text-align: center;
+}
+h2 a {
+   color: #333;
+}
+h3 a {
+   color: azure;
+}
+.content p {
+   color: rgba(240, 255, 255, 0.9);
+}
+.profile {
+   background: blueviolet;
+   padding: 10px;
+   border-radius: 50px;
+}
+.profile:hover,
+.img_sec img:hover {
+   -webkit-box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
+   box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
+   cursor: pointer;
+}
+.info h2 a:hover {
+   color: royalblue;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    margin-top: 40px !important;
+
+}
+element {
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #d6d6d6;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background: #869791;
+}
+.star-icons span i {
+   color: rgba(240, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 1200px) {
+   .container {
+      max-width: 100%;
+      padding: 0 60px;
+   }
+}

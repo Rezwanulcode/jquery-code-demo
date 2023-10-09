@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #square_red {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="square_red"></div>
+    <p>This is the place:<span id="area">mukto</span></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zJwbZX4i-N4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <script>
+        $(function () {
+            $("#square_red").hover(function () {
+
+                $("iframe").attr('src', 'https://10fastfingers.com/typing-test/english');
+                // alert("how are you");
+
+
+            })
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

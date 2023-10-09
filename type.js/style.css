@@ -1,0 +1,16 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: auto;
+   text-align: center;
+   margin-top: 100px;
+   padding: 300px;
+   background: linear-gradient(rgb(175, 185, 206), rgba(255, 0, 0, 0));
+   width: 1200px;
+   border-radius: 50px;
+   font-size: 95px;
+   color:royalblue;
+   box-shadow: 10px 5px 5px 10px grey;
+}

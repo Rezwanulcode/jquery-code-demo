@@ -1,0 +1,66 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+#header {
+   background-color: #eee;
+   /* padding: 5px; */
+   /* width: 100%; */
+   height: 35px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   font-size: 20px;
+}
+#logo {
+   font-weight: bold;
+   font-size: 120%;
+   margin-left: 5%;
+}
+#buttonContainer {
+   width: 31.25rem;
+   /*NOTE: margin 0 auto take item in center */
+   margin: 0 auto;
+   display: flex;
+   /* margin-left :30em ; */
+}
+.toggleButton {
+   border: 1px solid gray;
+   padding: 5px;
+   border-right: none;
+   /* float: left; */
+}
+.toggleButton:nth-child(4) {
+   border-right: 1px solid gray;
+}
+#html {
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+#outPut {
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+.active {
+   background-color: #e8f2ff;
+   /* background-color:red; */
+}
+.highlightedButton {
+   background-color: gray;
+}
+
+textarea {
+   width: 50%;
+   height: 100%;
+   resize: none;
+}
+.panel {
+   width: 50%;
+   float: left;
+}
+.hidden {
+   display: none;
+}
+iframe {
+   border: none;
+}

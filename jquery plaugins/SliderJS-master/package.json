@@ -1,0 +1,50 @@
+{
+  "name": "slider-js",
+  "version": "1.0.0",
+  "description": "A tiny slider component built with Vanilla JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx gulp",
+    "build": "npx gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 5%",
+    "Firefox ESR"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iClusterDev/SliderJS.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "browser-sync",
+    "browserify",
+    "babelify",
+    "babel"
+  ],
+  "author": "iClusterDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iClusterDev/SliderJS/issues"
+  },
+  "homepage": "https://github.com/iClusterDev/SliderJS#readme"
+}

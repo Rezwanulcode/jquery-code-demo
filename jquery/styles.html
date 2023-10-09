@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #circle_y {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+
+        #square_green {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* border-radius: 50%; */
+        }
+
+        #square_red {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        #display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- C:\Users\Mukto\Desktop -->
+    <div id="display">
+        <span>
+            <div id="circle_y"></div>
+        </span>
+
+        <span id="square">
+            <div id="square_green" ></div>
+        </span>
+        <span>
+            <div id="square_red"></div>
+        </span>
+    </div>
+
+    <script>
+        $(function () {
+
+            $("#square_red").click(function () {
+                $("#square_red").css("width", "400px")
+                $("#square_red").css("display", "none")
+
+
+            })
+
+            $("#circle_y").click(function () {
+                $("#circle_y").css("display", "none")
+            })
+
+            $("#square_green").click(function () {
+                $("#square_green").css("display", "none")
+
+            })
+            $("span").click(function () {
+
+                if ($(this).attr("id") == "square") {
+                    alert("you have clicked square");
+                    // break;
+                } else {
+                    alert("this not square");
+
+                }
+
+            })
+
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>wow js for sliders</title>
+</head>
+
+<!-- !NOTE "this is for fade in effect " -->
+
+<!-- <style>
+        .wow:first-child {
+            visibility: hidden;
+        } -->
+<!-- </style> -->
+<!-- !NOTE "this is for fade ie support " -->
+<!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+
+
+<body>
+
+
+    <div class="container" id="container_style">
+        <div class="wow slideInLeft" data-wow-delay="2s" data-wow-offset="300">
+            <div class="slide_left width">
+                <img src="images/t1.jpg" alt="">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium facere autem
+                        quae temporibus excepturi, magnam blanditiis doloremque consequuntur quos vitae
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="wow slideInRight">
+                <div class="slide_right width">
+                    <img src="images/t2.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium facere autem
+                        quae temporibus
+                        excepturi, magnam blanditiis doloremque consequuntur quos vitae
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="wow slideInDown">
+
+                <div class="pulse width">
+                    <!-- <div class=" animated pulse"> -->
+
+                    <img src="images/t3.jpg" alt="" data-wow-offset="300">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium facere autem
+                        quae temporibus
+                        excepturi, magnam blanditiis doloremque consequuntur quos vitae
+                    </p>
+                    <!-- </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="wow pulse " data-wow-iteration="infinite">
+
+                <div class="fade width">
+                    <img src="images/t4.jpg" alt="">
+                    <p>
+                       aaaa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium facere autem
+                        quae temporibusclass="wow pulse" style="background-color: #e74c3c;"
+                        data-wow-iteration="infinite" data-wow-duration="1500ms"
+                        excepturi, magnam blanditiis doloremque consequuntur quos vitae
+                    </p>
+                </div>
+            </div>
+
+            <div class=" wow fadeInDownBig " data-wow-iteration="infinite">
+
+                <div class="fade width">
+                    <img src="images/t4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium facere autem
+                        quae temporibusclass="wow pulse" style="background-color: #e74c3c;"
+                        data-wow-iteration="infinite" data-wow-duration="1500ms"
+                        excepturi, magnam blanditiis doloremque consequuntur quos vitae
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </section>
+    <script src="vendors/js/wow.min.js"></script>
+    <script>
+
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+    </script>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>

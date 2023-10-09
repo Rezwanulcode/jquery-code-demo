@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #circle {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+
+        #square_green {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* border-radius: 50%; */
+        }
+
+        #square_red {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        #display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <title>start for jquery</title>
+</head>
+
+<body>
+    <div id="test">start for jquery</div>
+    <button id="click1">Hello</button>
+
+    <div id="display">
+        <div id="circle"></div>
+        <div id="square_green"></div>
+        <div id="square_red"></div>
+    </div>
+    <div id="loader"></div>
+
+
+
+</body>
+<script>
+    $(function () {
+        $("#click1").click(function () {
+            $("#test").text("how are you");
+        })
+        $("#circle").click(function () {
+            alert("circle was clicked")
+        })
+
+        $("#square_green").click(function () {
+            alert("square_green was clicked")
+        })
+
+        $("#square_red").click(function () {
+            alert("square_red was clicked")
+        })
+
+    });
+
+
+
+
+
+</script>
+
+</html>

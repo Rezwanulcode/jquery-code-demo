@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+		/>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="autoHeight_wrapper">
+			<h2>Autoheight</h2>
+			<div class="autoHeight" id="autoHeight">
+				<div>
+					<div>
+						<img
+							src="https://source.unsplash.com/collection/993239/1600x500"
+							alt=""
+							width="1600"
+							height="500"
+						/>
+					</div>
+					<p>Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!</p>
+				</div>
+				<div>
+					<div>
+						<img
+							src="https://source.unsplash.com/collection/1673600/1600x700"
+							alt=""
+							width="1600"
+							height="700"
+						/>
+					</div>
+					<p>Corrupti, libero minima nihil expedita officiis? Quo.</p>
+				</div>
+				<div>
+					<div>
+						<img
+							src="https://source.unsplash.com/collection/1513994/1600x600"
+							alt=""
+							width="1600"
+							height="600"
+						/>
+					</div>
+					<p>Alias rem, ab impedit recusandae repellat tempore.</p>
+				</div>
+				<div>
+					<div>
+						<img
+							src="https://source.unsplash.com/collection/502925/1600x800"
+							alt=""
+							width="1600"
+							height="800"
+						/>
+					</div>
+					<p>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</p>
+				</div>
+				<div>
+					<div>
+						<img
+							src="https://source.unsplash.com/collection/1891993/1600x500"
+							alt=""
+							width="1600"
+							height="500"
+						/>
+					</div>
+					<p>Nisi harum earum consectetur laudantium iusto, laboriosam.</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<script>
+			jQuery(document).ready(function ($) {
+				// Your Tiny Slider code here
+				var slider = tns({
+					container: "#rez_slider",
+					speed: 300,
+					autoplayTimeout: 3000,
+					items: 1,
+					autoplay: true,
+					nav: false,
+					controls: false,
+					autoplayButtonOutput: false,
+				});
+			});
+		</script>
+	</body>
+</html>

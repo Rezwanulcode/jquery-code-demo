@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>start for jquery</title>
+</head>
+
+<body>
+    <div id="test">start for jquery</div>
+    <button id="click1">Hello</button>
+
+    <div id="loader"></div>
+
+
+
+</body>
+<script>
+
+    $(function () {
+        $("#click1").click(function () {
+            $("#test").text("how are you");
+        });
+    });
+
+    var click = document.querySelector('#click1');
+    var test = document.querySelector('#test');
+    var how = "how are you ?";
+    click.addEventListener("click", () => {
+
+        test.value = "";
+        test.innerHTML = how;
+
+    })
+    // click.addEventListener("click", () => {
+
+
+    // }
+
+
+    // setTimeout(function () { alert("Hello"); }, 3000);
+    var cars = ["Saab", "Volvo", "BMW"];
+
+    $(document).ready(function () {
+        loadItem(0);
+    });
+
+    function loadItem(index) {
+        if (index < cars.length) {
+            $('#loader').html(cars[index]);
+            setTimeout(function () {
+                loadItem(index + 1);
+            }, 1000);
+        }
+    }
+    // 
+    if (jQuery == undefined) {
+alert("It's not installed");
+}else{
+    alert("it's installed correctly;");
+}
+
+    // setTimeout(onclick, 10)
+</script>
+
+</html>
+
+<!-- onclick="setTimeout(rating(), 3000)"
+to
+
+onclick="setTimeout(rating, 3000)"
+or better way would be:
+
+onclick = setTimeout(function() {
+rating();
+}, 3000); -->

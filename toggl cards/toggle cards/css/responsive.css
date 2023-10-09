@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1295px) {
+
+
+   .cards {
+      width: 350px;
+      height: 350px
+   }
+}
+
+@media only screen and (max-width: 1114px) {
+
+
+
+   .cards {
+      width: 300px;
+      height: 350px
+   }
+
+   .amount,
+   .currency {
+      font-size: 20px;
+      padding-bottom: 15px;
+      text-transform: capitalize;
+      color: rgb(103, 179, 103);
+   }
+
+   .cards_list ul :nth-child(1) {
+      font-size: 15px;
+      padding-bottom: 10px;
+   }
+
+   .cards_list a {
+      padding: 8px;
+   }
+
+   .cards_list ul {
+      color: green;
+      font-size: 15px;
+      font-weight: 30px;
+   }
+
+  @media only screen and (max-width: 974px) {
+      /* .container {
+         background-color: red;
+      } */
+      .cards_container{
+         flex-direction:column;
+      }
+
+   }
+}
